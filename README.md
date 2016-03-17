@@ -8,17 +8,24 @@ Tags
 
 * latest: Ubuntu 14.04 (LTS), Apache 2.4, PHP 5.5.9 with support for setting `error_reporting`
 
+
+Build
+------
+
+Run ```make``` inside cloned directory.
+
+
 Usage
 ------
 
 ```
-$ docker run -d -P bylexus/apache-php
+$ docker run -d -P smile/apache-php
 ```
 
 With all the options:
 
 ```bash
-$ docker run -d -p 8080:80 \
+$ docker run -d -p 8080:80 smile/apache-php \
     -v /home/user/webroot:/var/www \
     -e PHP_ERROR_REPORTING='E_ALL & ~E_STRICT'
 ```
