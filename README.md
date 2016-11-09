@@ -19,13 +19,13 @@ Usage
 ------
 
 ```
-$ docker run -d -P smile/apache-php
+$ docker run -d -P dddpaul/apache-php55
 ```
 
 With all the options:
 
 ```bash
-$ docker run -d -p 8080:80 smile/apache-php \
+$ docker run -d -p 8080:80 dddpaul/apache-php55 \
     -v /home/user/webroot:/var/www \
     -e PHP_ERROR_REPORTING='E_ALL & ~E_STRICT'
 ```
